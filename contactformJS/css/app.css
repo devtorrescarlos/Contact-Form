@@ -243,13 +243,3 @@ textarea {
   opacity: 0;
   pointer-events: none;
 }
-
-/** Message Animation **/
-
-.message-send-email-animation-in{
-  animation: show-in 450ms ease;
-}
-
-.message-send-email-animation-out{
-  animation: show-out 2s forwards;
-}
