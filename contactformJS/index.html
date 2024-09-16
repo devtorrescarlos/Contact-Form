@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <main>
+      <form class="formulario" id="formulario">
+        <div class="toast hidden " id="toast">
+          <img class="toast__icon" src="assets/images/icon-success-check.svg" alt="succes check">
+          <span>Message Sent!</span>
+          <p>Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+        <fieldset>
+          <legend>Contact Us</legend>
+          <div class="contenedor">
+            <div class="campo">
+              <label class="contenido" for="nombre"
+                >First Name <span>*</span></label
+              >
+              <input
+                class="contenido__input"
+                type="text"
+                id="nombre"
+                name="nombre"
+              />
+            </div>
+
+            <div class="campo">
+              <label class="contenido" for="apellido"
+                >Last Name <span>*</span></label
+              >
+              <input
+                class="contenido__input"
+                type="text"
+                id="apellido"
+                name="apellido"
+              />
+            </div>
+          </div>
+          <div class="campo">
+            <label class="contenido block" for="email"
+              >Email Address <span>*</span></label
+            >
+            <input
+              class="contenido__input"
+              type="email"
+              id="email"
+              name="email"
+            />
+          </div>
+
+          <label class="contenido block" for=""
+            >Query Type <span>*</span></label
+          >
+          <div class="contenedor" id="query">
+            <label class="contenido__input contenido flex radio" for="general">
+              <input class="radio" type="radio" name="query" id="general" />
+              General Enquiry
+            </label>
+            <label class="contenido__input contenido flex radio" for="support">
+              <input class="radio" type="radio" name="query" id="support" />
+              Support Request
+            </label>
+          </div>
+
+          <div class="campo">
+            <label class="contenido block" for="">Message <span>*</span></label>
+            <textarea
+              class="contenido__input"
+              id="mensaje"
+              name="mensaje"
+            ></textarea>
+          </div>
+
+          <div class="contenido flex">
+            <div class="campo">
+              <input id="check" class="check" type="checkbox" value="Submit" />
+              <label class="checkbox" for="check"
+                >I consent to being contacted by the team <span>*</span></label
+              >
+            </div>
+          </div>
+
+          <input
+            class="contenido submit radio opacity"
+            type="submit"
+            value="Submit"
+            id="submit"
+            disabled
+          />
+        </fieldset>
+      </form>
+    </main>
+
+    <!-- <footer class="footer">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer> -->
+  </body>
+  <script src="js/app.js"></script>
+</html>
